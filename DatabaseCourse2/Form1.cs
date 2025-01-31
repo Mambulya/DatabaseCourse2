@@ -49,5 +49,27 @@ namespace DatabaseCourse2
         {
 
         }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                proTA.Update(this.dataSet2.production_normas);
+                weTA.Update(this.dataSet2.worker_experience);
+                wiTA.Update(this.dataSet2.worker_info);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            MessageBox.Show("Changes saved!");
+
+
+        }
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            FillAll();
+        }
+
     }
 }

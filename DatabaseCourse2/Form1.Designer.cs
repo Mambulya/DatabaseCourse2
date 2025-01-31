@@ -30,9 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.production_normasdataGridView = new System.Windows.Forms.DataGridView();
-            this.dataSet2 = new DatabaseCourse2.DataSet2();
-            this.productionnormasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.production_normasTableAdapter = new DatabaseCourse2.DataSet2TableAdapters.production_normasTableAdapter();
             this.idcomponentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idoperationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codeworkerprofessionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,9 +37,10 @@
             this.tariffcodeworkerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.completetimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.itemtimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productionnormasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet2 = new DatabaseCourse2.DataSet2();
+            this.production_normasTableAdapter = new DatabaseCourse2.DataSet2TableAdapters.production_normasTableAdapter();
             this.worker_experiencedataGridView = new System.Windows.Forms.DataGridView();
-            this.workerexperienceBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.worker_experienceTableAdapter = new DatabaseCourse2.DataSet2TableAdapters.worker_experienceTableAdapter();
             this.idworkerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.finishedworkdateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idcomponentDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,9 +48,9 @@
             this.numgoodcomponentsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numbadcomponentsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.defectproportionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.workerexperienceBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.worker_experienceTableAdapter = new DatabaseCourse2.DataSet2TableAdapters.worker_experienceTableAdapter();
             this.worker_infodataGridView = new System.Windows.Forms.DataGridView();
-            this.workerinfoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.worker_infoTableAdapter = new DatabaseCourse2.DataSet2TableAdapters.worker_infoTableAdapter();
             this.idworkerDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idfactoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iddepartmentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,14 +58,16 @@
             this.workerquilificationDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.marriedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.workerinfoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.worker_infoTableAdapter = new DatabaseCourse2.DataSet2TableAdapters.worker_infoTableAdapter();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.production_normasdataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productionnormasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.worker_experiencedataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.workerexperienceBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.worker_infodataGridView)).BeginInit();
@@ -91,20 +91,6 @@
             this.production_normasdataGridView.Name = "production_normasdataGridView";
             this.production_normasdataGridView.Size = new System.Drawing.Size(742, 150);
             this.production_normasdataGridView.TabIndex = 0;
-            // 
-            // dataSet2
-            // 
-            this.dataSet2.DataSetName = "DataSet2";
-            this.dataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // productionnormasBindingSource
-            // 
-            this.productionnormasBindingSource.DataMember = "production_normas";
-            this.productionnormasBindingSource.DataSource = this.dataSet2;
-            // 
-            // production_normasTableAdapter
-            // 
-            this.production_normasTableAdapter.ClearBeforeFill = true;
             // 
             // idcomponentDataGridViewTextBoxColumn
             // 
@@ -148,6 +134,20 @@
             this.itemtimeDataGridViewTextBoxColumn.HeaderText = "item_time";
             this.itemtimeDataGridViewTextBoxColumn.Name = "itemtimeDataGridViewTextBoxColumn";
             // 
+            // productionnormasBindingSource
+            // 
+            this.productionnormasBindingSource.DataMember = "production_normas";
+            this.productionnormasBindingSource.DataSource = this.dataSet2;
+            // 
+            // dataSet2
+            // 
+            this.dataSet2.DataSetName = "DataSet2";
+            this.dataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // production_normasTableAdapter
+            // 
+            this.production_normasTableAdapter.ClearBeforeFill = true;
+            // 
             // worker_experiencedataGridView
             // 
             this.worker_experiencedataGridView.AutoGenerateColumns = false;
@@ -165,15 +165,6 @@
             this.worker_experiencedataGridView.Name = "worker_experiencedataGridView";
             this.worker_experiencedataGridView.Size = new System.Drawing.Size(741, 152);
             this.worker_experiencedataGridView.TabIndex = 1;
-            // 
-            // workerexperienceBindingSource
-            // 
-            this.workerexperienceBindingSource.DataMember = "worker_experience";
-            this.workerexperienceBindingSource.DataSource = this.dataSet2;
-            // 
-            // worker_experienceTableAdapter
-            // 
-            this.worker_experienceTableAdapter.ClearBeforeFill = true;
             // 
             // idworkerDataGridViewTextBoxColumn
             // 
@@ -217,6 +208,15 @@
             this.defectproportionDataGridViewTextBoxColumn.HeaderText = "defect_proportion";
             this.defectproportionDataGridViewTextBoxColumn.Name = "defectproportionDataGridViewTextBoxColumn";
             // 
+            // workerexperienceBindingSource
+            // 
+            this.workerexperienceBindingSource.DataMember = "worker_experience";
+            this.workerexperienceBindingSource.DataSource = this.dataSet2;
+            // 
+            // worker_experienceTableAdapter
+            // 
+            this.worker_experienceTableAdapter.ClearBeforeFill = true;
+            // 
             // worker_infodataGridView
             // 
             this.worker_infodataGridView.AutoGenerateColumns = false;
@@ -234,15 +234,6 @@
             this.worker_infodataGridView.Name = "worker_infodataGridView";
             this.worker_infodataGridView.Size = new System.Drawing.Size(741, 153);
             this.worker_infodataGridView.TabIndex = 2;
-            // 
-            // workerinfoBindingSource
-            // 
-            this.workerinfoBindingSource.DataMember = "worker_info";
-            this.workerinfoBindingSource.DataSource = this.dataSet2;
-            // 
-            // worker_infoTableAdapter
-            // 
-            this.worker_infoTableAdapter.ClearBeforeFill = true;
             // 
             // idworkerDataGridViewTextBoxColumn1
             // 
@@ -287,6 +278,15 @@
             this.fioDataGridViewTextBoxColumn.HeaderText = "fio";
             this.fioDataGridViewTextBoxColumn.Name = "fioDataGridViewTextBoxColumn";
             // 
+            // workerinfoBindingSource
+            // 
+            this.workerinfoBindingSource.DataMember = "worker_info";
+            this.workerinfoBindingSource.DataSource = this.dataSet2;
+            // 
+            // worker_infoTableAdapter
+            // 
+            this.worker_infoTableAdapter.ClearBeforeFill = true;
+            // 
             // btnSave
             // 
             this.btnSave.Location = new System.Drawing.Point(157, 603);
@@ -295,6 +295,7 @@
             this.btnSave.TabIndex = 3;
             this.btnSave.Text = "save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnRefresh
             // 
@@ -304,6 +305,7 @@
             this.btnRefresh.TabIndex = 4;
             this.btnRefresh.Text = "refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // label1
             // 
@@ -350,8 +352,8 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.production_normasdataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productionnormasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.worker_experiencedataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.workerexperienceBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.worker_infodataGridView)).EndInit();
