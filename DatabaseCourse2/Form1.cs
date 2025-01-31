@@ -21,12 +21,12 @@ namespace DatabaseCourse2
         public Form1()
         {
             InitializeComponent();
-
+            productionnormasBindingSource.DataSource = this.dataSet2.production_normas;
+            workerexperienceBindingSource.DataSource = this.dataSet2.worker_experience;
+            workerinfoBindingSource.DataSource = this.dataSet2.worker_info;
         }
 
-
-
-        private void Form1_Load(object sender, EventArgs e)
+        private void FillAll()
         {
 
             // TODO: данная строка кода позволяет загрузить данные в таблицу "dataSet2.worker_info". При необходимости она может быть перемещена или удалена.
@@ -35,6 +35,13 @@ namespace DatabaseCourse2
             this.worker_experienceTableAdapter.Fill(this.dataSet2.worker_experience);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "dataSet2.production_normas". При необходимости она может быть перемещена или удалена.
             this.production_normasTableAdapter.Fill(this.dataSet2.production_normas);
+        }
+
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+        
+            FillAll();
 
         }
 
