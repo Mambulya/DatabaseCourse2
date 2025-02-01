@@ -76,5 +76,11 @@ namespace DatabaseCourse2
             AltForm f = new AltForm();
             f.ShowDialog();
         }
+
+        private void sqlProcedureToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CmdForm cmd = new CmdForm();    
+            cmd.ShowDialog();
+        }
     }
 }

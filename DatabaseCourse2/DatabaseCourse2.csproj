@@ -52,6 +52,12 @@
     <Compile Include="AltForm.Designer.cs">
       <DependentUpon>AltForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="CmdForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CmdForm.Designer.cs">
+      <DependentUpon>CmdForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -67,6 +73,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AltForm.resx">
       <DependentUpon>AltForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CmdForm.resx">
+      <DependentUpon>CmdForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

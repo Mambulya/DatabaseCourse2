@@ -67,9 +67,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.формыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.задача1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.основнаяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.альтернативнаяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.задача1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sqlProcedureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.production_normasdataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productionnormasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet2)).BeginInit();
@@ -93,52 +94,68 @@
             this.completetimeDataGridViewTextBoxColumn,
             this.itemtimeDataGridViewTextBoxColumn});
             this.production_normasdataGridView.DataSource = this.productionnormasBindingSource;
-            this.production_normasdataGridView.Location = new System.Drawing.Point(12, 40);
+            this.production_normasdataGridView.Location = new System.Drawing.Point(18, 62);
+            this.production_normasdataGridView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.production_normasdataGridView.Name = "production_normasdataGridView";
-            this.production_normasdataGridView.Size = new System.Drawing.Size(742, 150);
+            this.production_normasdataGridView.RowHeadersWidth = 62;
+            this.production_normasdataGridView.Size = new System.Drawing.Size(1113, 231);
             this.production_normasdataGridView.TabIndex = 0;
             // 
             // idcomponentDataGridViewTextBoxColumn
             // 
             this.idcomponentDataGridViewTextBoxColumn.DataPropertyName = "id_component";
             this.idcomponentDataGridViewTextBoxColumn.HeaderText = "id_component";
+            this.idcomponentDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.idcomponentDataGridViewTextBoxColumn.Name = "idcomponentDataGridViewTextBoxColumn";
+            this.idcomponentDataGridViewTextBoxColumn.Width = 150;
             // 
             // idoperationDataGridViewTextBoxColumn
             // 
             this.idoperationDataGridViewTextBoxColumn.DataPropertyName = "id_operation";
             this.idoperationDataGridViewTextBoxColumn.HeaderText = "id_operation";
+            this.idoperationDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.idoperationDataGridViewTextBoxColumn.Name = "idoperationDataGridViewTextBoxColumn";
+            this.idoperationDataGridViewTextBoxColumn.Width = 150;
             // 
             // codeworkerprofessionDataGridViewTextBoxColumn
             // 
             this.codeworkerprofessionDataGridViewTextBoxColumn.DataPropertyName = "code_worker_profession";
             this.codeworkerprofessionDataGridViewTextBoxColumn.HeaderText = "code_worker_profession";
+            this.codeworkerprofessionDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.codeworkerprofessionDataGridViewTextBoxColumn.Name = "codeworkerprofessionDataGridViewTextBoxColumn";
+            this.codeworkerprofessionDataGridViewTextBoxColumn.Width = 150;
             // 
             // workerquilificationDataGridViewTextBoxColumn
             // 
             this.workerquilificationDataGridViewTextBoxColumn.DataPropertyName = "worker_quilification";
             this.workerquilificationDataGridViewTextBoxColumn.HeaderText = "worker_quilification";
+            this.workerquilificationDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.workerquilificationDataGridViewTextBoxColumn.Name = "workerquilificationDataGridViewTextBoxColumn";
+            this.workerquilificationDataGridViewTextBoxColumn.Width = 150;
             // 
             // tariffcodeworkerDataGridViewTextBoxColumn
             // 
             this.tariffcodeworkerDataGridViewTextBoxColumn.DataPropertyName = "tariff_code_worker";
             this.tariffcodeworkerDataGridViewTextBoxColumn.HeaderText = "tariff_code_worker";
+            this.tariffcodeworkerDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.tariffcodeworkerDataGridViewTextBoxColumn.Name = "tariffcodeworkerDataGridViewTextBoxColumn";
+            this.tariffcodeworkerDataGridViewTextBoxColumn.Width = 150;
             // 
             // completetimeDataGridViewTextBoxColumn
             // 
             this.completetimeDataGridViewTextBoxColumn.DataPropertyName = "complete_time";
             this.completetimeDataGridViewTextBoxColumn.HeaderText = "complete_time";
+            this.completetimeDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.completetimeDataGridViewTextBoxColumn.Name = "completetimeDataGridViewTextBoxColumn";
+            this.completetimeDataGridViewTextBoxColumn.Width = 150;
             // 
             // itemtimeDataGridViewTextBoxColumn
             // 
             this.itemtimeDataGridViewTextBoxColumn.DataPropertyName = "item_time";
             this.itemtimeDataGridViewTextBoxColumn.HeaderText = "item_time";
+            this.itemtimeDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.itemtimeDataGridViewTextBoxColumn.Name = "itemtimeDataGridViewTextBoxColumn";
+            this.itemtimeDataGridViewTextBoxColumn.Width = 150;
             // 
             // productionnormasBindingSource
             // 
@@ -167,52 +184,68 @@
             this.numbadcomponentsDataGridViewTextBoxColumn,
             this.defectproportionDataGridViewTextBoxColumn});
             this.worker_experiencedataGridView.DataSource = this.workerexperienceBindingSource;
-            this.worker_experiencedataGridView.Location = new System.Drawing.Point(13, 228);
+            this.worker_experiencedataGridView.Location = new System.Drawing.Point(20, 351);
+            this.worker_experiencedataGridView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.worker_experiencedataGridView.Name = "worker_experiencedataGridView";
-            this.worker_experiencedataGridView.Size = new System.Drawing.Size(741, 152);
+            this.worker_experiencedataGridView.RowHeadersWidth = 62;
+            this.worker_experiencedataGridView.Size = new System.Drawing.Size(1112, 234);
             this.worker_experiencedataGridView.TabIndex = 1;
             // 
             // idworkerDataGridViewTextBoxColumn
             // 
             this.idworkerDataGridViewTextBoxColumn.DataPropertyName = "id_worker";
             this.idworkerDataGridViewTextBoxColumn.HeaderText = "id_worker";
+            this.idworkerDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.idworkerDataGridViewTextBoxColumn.Name = "idworkerDataGridViewTextBoxColumn";
+            this.idworkerDataGridViewTextBoxColumn.Width = 150;
             // 
             // finishedworkdateDataGridViewTextBoxColumn
             // 
             this.finishedworkdateDataGridViewTextBoxColumn.DataPropertyName = "finished_work_date";
             this.finishedworkdateDataGridViewTextBoxColumn.HeaderText = "finished_work_date";
+            this.finishedworkdateDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.finishedworkdateDataGridViewTextBoxColumn.Name = "finishedworkdateDataGridViewTextBoxColumn";
+            this.finishedworkdateDataGridViewTextBoxColumn.Width = 150;
             // 
             // idcomponentDataGridViewTextBoxColumn1
             // 
             this.idcomponentDataGridViewTextBoxColumn1.DataPropertyName = "id_component";
             this.idcomponentDataGridViewTextBoxColumn1.HeaderText = "id_component";
+            this.idcomponentDataGridViewTextBoxColumn1.MinimumWidth = 8;
             this.idcomponentDataGridViewTextBoxColumn1.Name = "idcomponentDataGridViewTextBoxColumn1";
+            this.idcomponentDataGridViewTextBoxColumn1.Width = 150;
             // 
             // idoperationDataGridViewTextBoxColumn1
             // 
             this.idoperationDataGridViewTextBoxColumn1.DataPropertyName = "id_operation";
             this.idoperationDataGridViewTextBoxColumn1.HeaderText = "id_operation";
+            this.idoperationDataGridViewTextBoxColumn1.MinimumWidth = 8;
             this.idoperationDataGridViewTextBoxColumn1.Name = "idoperationDataGridViewTextBoxColumn1";
+            this.idoperationDataGridViewTextBoxColumn1.Width = 150;
             // 
             // numgoodcomponentsDataGridViewTextBoxColumn
             // 
             this.numgoodcomponentsDataGridViewTextBoxColumn.DataPropertyName = "num_good_components";
             this.numgoodcomponentsDataGridViewTextBoxColumn.HeaderText = "num_good_components";
+            this.numgoodcomponentsDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.numgoodcomponentsDataGridViewTextBoxColumn.Name = "numgoodcomponentsDataGridViewTextBoxColumn";
+            this.numgoodcomponentsDataGridViewTextBoxColumn.Width = 150;
             // 
             // numbadcomponentsDataGridViewTextBoxColumn
             // 
             this.numbadcomponentsDataGridViewTextBoxColumn.DataPropertyName = "num_bad_components";
             this.numbadcomponentsDataGridViewTextBoxColumn.HeaderText = "num_bad_components";
+            this.numbadcomponentsDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.numbadcomponentsDataGridViewTextBoxColumn.Name = "numbadcomponentsDataGridViewTextBoxColumn";
+            this.numbadcomponentsDataGridViewTextBoxColumn.Width = 150;
             // 
             // defectproportionDataGridViewTextBoxColumn
             // 
             this.defectproportionDataGridViewTextBoxColumn.DataPropertyName = "defect_proportion";
             this.defectproportionDataGridViewTextBoxColumn.HeaderText = "defect_proportion";
+            this.defectproportionDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.defectproportionDataGridViewTextBoxColumn.Name = "defectproportionDataGridViewTextBoxColumn";
+            this.defectproportionDataGridViewTextBoxColumn.Width = 150;
             // 
             // workerexperienceBindingSource
             // 
@@ -236,53 +269,69 @@
             this.marriedDataGridViewTextBoxColumn,
             this.fioDataGridViewTextBoxColumn});
             this.worker_infodataGridView.DataSource = this.workerinfoBindingSource;
-            this.worker_infodataGridView.Location = new System.Drawing.Point(13, 421);
+            this.worker_infodataGridView.Location = new System.Drawing.Point(20, 648);
+            this.worker_infodataGridView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.worker_infodataGridView.Name = "worker_infodataGridView";
-            this.worker_infodataGridView.Size = new System.Drawing.Size(741, 153);
+            this.worker_infodataGridView.RowHeadersWidth = 62;
+            this.worker_infodataGridView.Size = new System.Drawing.Size(1112, 235);
             this.worker_infodataGridView.TabIndex = 2;
             // 
             // idworkerDataGridViewTextBoxColumn1
             // 
             this.idworkerDataGridViewTextBoxColumn1.DataPropertyName = "id_worker";
             this.idworkerDataGridViewTextBoxColumn1.HeaderText = "id_worker";
+            this.idworkerDataGridViewTextBoxColumn1.MinimumWidth = 8;
             this.idworkerDataGridViewTextBoxColumn1.Name = "idworkerDataGridViewTextBoxColumn1";
             this.idworkerDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.idworkerDataGridViewTextBoxColumn1.Width = 150;
             // 
             // idfactoryDataGridViewTextBoxColumn
             // 
             this.idfactoryDataGridViewTextBoxColumn.DataPropertyName = "id_factory";
             this.idfactoryDataGridViewTextBoxColumn.HeaderText = "id_factory";
+            this.idfactoryDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.idfactoryDataGridViewTextBoxColumn.Name = "idfactoryDataGridViewTextBoxColumn";
+            this.idfactoryDataGridViewTextBoxColumn.Width = 150;
             // 
             // iddepartmentDataGridViewTextBoxColumn
             // 
             this.iddepartmentDataGridViewTextBoxColumn.DataPropertyName = "id_department";
             this.iddepartmentDataGridViewTextBoxColumn.HeaderText = "id_department";
+            this.iddepartmentDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.iddepartmentDataGridViewTextBoxColumn.Name = "iddepartmentDataGridViewTextBoxColumn";
+            this.iddepartmentDataGridViewTextBoxColumn.Width = 150;
             // 
             // codeworkerprofessionDataGridViewTextBoxColumn1
             // 
             this.codeworkerprofessionDataGridViewTextBoxColumn1.DataPropertyName = "code_worker_profession";
             this.codeworkerprofessionDataGridViewTextBoxColumn1.HeaderText = "code_worker_profession";
+            this.codeworkerprofessionDataGridViewTextBoxColumn1.MinimumWidth = 8;
             this.codeworkerprofessionDataGridViewTextBoxColumn1.Name = "codeworkerprofessionDataGridViewTextBoxColumn1";
+            this.codeworkerprofessionDataGridViewTextBoxColumn1.Width = 150;
             // 
             // workerquilificationDataGridViewTextBoxColumn1
             // 
             this.workerquilificationDataGridViewTextBoxColumn1.DataPropertyName = "worker_quilification";
             this.workerquilificationDataGridViewTextBoxColumn1.HeaderText = "worker_quilification";
+            this.workerquilificationDataGridViewTextBoxColumn1.MinimumWidth = 8;
             this.workerquilificationDataGridViewTextBoxColumn1.Name = "workerquilificationDataGridViewTextBoxColumn1";
+            this.workerquilificationDataGridViewTextBoxColumn1.Width = 150;
             // 
             // marriedDataGridViewTextBoxColumn
             // 
             this.marriedDataGridViewTextBoxColumn.DataPropertyName = "married";
             this.marriedDataGridViewTextBoxColumn.HeaderText = "married";
+            this.marriedDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.marriedDataGridViewTextBoxColumn.Name = "marriedDataGridViewTextBoxColumn";
+            this.marriedDataGridViewTextBoxColumn.Width = 150;
             // 
             // fioDataGridViewTextBoxColumn
             // 
             this.fioDataGridViewTextBoxColumn.DataPropertyName = "fio";
             this.fioDataGridViewTextBoxColumn.HeaderText = "fio";
+            this.fioDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.fioDataGridViewTextBoxColumn.Name = "fioDataGridViewTextBoxColumn";
+            this.fioDataGridViewTextBoxColumn.Width = 150;
             // 
             // workerinfoBindingSource
             // 
@@ -297,9 +346,10 @@
             // 
             this.btnSave.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnSave.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnSave.Location = new System.Drawing.Point(157, 603);
+            this.btnSave.Location = new System.Drawing.Point(236, 928);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.Size = new System.Drawing.Size(112, 35);
             this.btnSave.TabIndex = 3;
             this.btnSave.Text = "save";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -309,9 +359,10 @@
             // 
             this.btnRefresh.BackColor = System.Drawing.SystemColors.HighlightText;
             this.btnRefresh.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnRefresh.Location = new System.Drawing.Point(554, 603);
+            this.btnRefresh.Location = new System.Drawing.Point(831, 928);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(75, 23);
+            this.btnRefresh.Size = new System.Drawing.Size(112, 35);
             this.btnRefresh.TabIndex = 4;
             this.btnRefresh.Text = "refresh";
             this.btnRefresh.UseVisualStyleBackColor = false;
@@ -320,9 +371,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 24);
+            this.label1.Location = new System.Drawing.Point(18, 37);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 13);
+            this.label1.Size = new System.Drawing.Size(146, 20);
             this.label1.TabIndex = 5;
             this.label1.Text = "production_normas";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -330,29 +382,33 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 212);
+            this.label2.Location = new System.Drawing.Point(15, 326);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 13);
+            this.label2.Size = new System.Drawing.Size(142, 20);
             this.label2.TabIndex = 6;
             this.label2.Text = "worker_experience";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 405);
+            this.label3.Location = new System.Drawing.Point(20, 623);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 13);
+            this.label3.Size = new System.Drawing.Size(91, 20);
             this.label3.TabIndex = 7;
             this.label3.Text = "worker_info";
             // 
             // menuStrip1
             // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.формыToolStripMenuItem,
             this.задача1ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(784, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1176, 35);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -360,35 +416,43 @@
             // 
             this.формыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.основнаяToolStripMenuItem,
-            this.альтернативнаяToolStripMenuItem});
+            this.альтернативнаяToolStripMenuItem,
+            this.sqlProcedureToolStripMenuItem});
             this.формыToolStripMenuItem.Name = "формыToolStripMenuItem";
-            this.формыToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.формыToolStripMenuItem.Size = new System.Drawing.Size(89, 29);
             this.формыToolStripMenuItem.Text = "Формы";
-            // 
-            // задача1ToolStripMenuItem
-            // 
-            this.задача1ToolStripMenuItem.Name = "задача1ToolStripMenuItem";
-            this.задача1ToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-            this.задача1ToolStripMenuItem.Text = "Задача 1";
             // 
             // основнаяToolStripMenuItem
             // 
             this.основнаяToolStripMenuItem.Name = "основнаяToolStripMenuItem";
-            this.основнаяToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.основнаяToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.основнаяToolStripMenuItem.Text = "Основная";
             // 
             // альтернативнаяToolStripMenuItem
             // 
             this.альтернативнаяToolStripMenuItem.Name = "альтернативнаяToolStripMenuItem";
-            this.альтернативнаяToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.альтернативнаяToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.альтернативнаяToolStripMenuItem.Text = "Альтернативная";
             this.альтернативнаяToolStripMenuItem.Click += new System.EventHandler(this.альтернативнаяToolStripMenuItem_Click);
             // 
+            // задача1ToolStripMenuItem
+            // 
+            this.задача1ToolStripMenuItem.Name = "задача1ToolStripMenuItem";
+            this.задача1ToolStripMenuItem.Size = new System.Drawing.Size(100, 29);
+            this.задача1ToolStripMenuItem.Text = "Задача 1";
+            // 
+            // sqlProcedureToolStripMenuItem
+            // 
+            this.sqlProcedureToolStripMenuItem.Name = "sqlProcedureToolStripMenuItem";
+            this.sqlProcedureToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.sqlProcedureToolStripMenuItem.Text = "SqlProcedure";
+            this.sqlProcedureToolStripMenuItem.Click += new System.EventHandler(this.sqlProcedureToolStripMenuItem_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 701);
+            this.ClientSize = new System.Drawing.Size(1176, 1050);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -399,6 +463,7 @@
             this.Controls.Add(this.production_normasdataGridView);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -459,6 +524,7 @@
         private System.Windows.Forms.ToolStripMenuItem основнаяToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem альтернативнаяToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem задача1ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sqlProcedureToolStripMenuItem;
     }
 }
 
