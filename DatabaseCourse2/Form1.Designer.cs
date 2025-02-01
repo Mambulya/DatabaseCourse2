@@ -71,6 +71,10 @@
             this.альтернативнаяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.задача1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sqlProcedureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lblQuilification = new System.Windows.Forms.Label();
+            this.lblResult = new System.Windows.Forms.Label();
+            this.textBoxQuilification = new System.Windows.Forms.TextBox();
+            this.btnProc = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.production_normasdataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productionnormasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet2)).BeginInit();
@@ -98,7 +102,7 @@
             this.production_normasdataGridView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.production_normasdataGridView.Name = "production_normasdataGridView";
             this.production_normasdataGridView.RowHeadersWidth = 62;
-            this.production_normasdataGridView.Size = new System.Drawing.Size(1113, 231);
+            this.production_normasdataGridView.Size = new System.Drawing.Size(1447, 231);
             this.production_normasdataGridView.TabIndex = 0;
             // 
             // idcomponentDataGridViewTextBoxColumn
@@ -188,7 +192,7 @@
             this.worker_experiencedataGridView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.worker_experiencedataGridView.Name = "worker_experiencedataGridView";
             this.worker_experiencedataGridView.RowHeadersWidth = 62;
-            this.worker_experiencedataGridView.Size = new System.Drawing.Size(1112, 234);
+            this.worker_experiencedataGridView.Size = new System.Drawing.Size(1612, 234);
             this.worker_experiencedataGridView.TabIndex = 1;
             // 
             // idworkerDataGridViewTextBoxColumn
@@ -273,7 +277,7 @@
             this.worker_infodataGridView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.worker_infodataGridView.Name = "worker_infodataGridView";
             this.worker_infodataGridView.RowHeadersWidth = 62;
-            this.worker_infodataGridView.Size = new System.Drawing.Size(1112, 235);
+            this.worker_infodataGridView.Size = new System.Drawing.Size(1612, 235);
             this.worker_infodataGridView.TabIndex = 2;
             // 
             // idworkerDataGridViewTextBoxColumn1
@@ -346,7 +350,7 @@
             // 
             this.btnSave.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnSave.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnSave.Location = new System.Drawing.Point(236, 928);
+            this.btnSave.Location = new System.Drawing.Point(386, 928);
             this.btnSave.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(112, 35);
@@ -359,7 +363,7 @@
             // 
             this.btnRefresh.BackColor = System.Drawing.SystemColors.HighlightText;
             this.btnRefresh.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnRefresh.Location = new System.Drawing.Point(831, 928);
+            this.btnRefresh.Location = new System.Drawing.Point(1629, 928);
             this.btnRefresh.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(112, 35);
@@ -408,7 +412,7 @@
             this.задача1ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1176, 35);
+            this.menuStrip1.Size = new System.Drawing.Size(1898, 35);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -448,11 +452,53 @@
             this.sqlProcedureToolStripMenuItem.Text = "SqlProcedure";
             this.sqlProcedureToolStripMenuItem.Click += new System.EventHandler(this.sqlProcedureToolStripMenuItem_Click);
             // 
+            // lblQuilification
+            // 
+            this.lblQuilification.AutoSize = true;
+            this.lblQuilification.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblQuilification.Location = new System.Drawing.Point(1491, 103);
+            this.lblQuilification.Name = "lblQuilification";
+            this.lblQuilification.Size = new System.Drawing.Size(240, 20);
+            this.lblQuilification.TabIndex = 10;
+            this.lblQuilification.Text = "Квалификация работника: ";
+            // 
+            // lblResult
+            // 
+            this.lblResult.AutoSize = true;
+            this.lblResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblResult.Location = new System.Drawing.Point(1491, 181);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(333, 20);
+            this.lblResult.TabIndex = 11;
+            this.lblResult.Text = "Суммарное время на изготовление:  0";
+            this.lblResult.Click += new System.EventHandler(this.ResLabel_Click);
+            // 
+            // textBoxQuilification
+            // 
+            this.textBoxQuilification.Location = new System.Drawing.Point(1749, 97);
+            this.textBoxQuilification.Name = "textBoxQuilification";
+            this.textBoxQuilification.Size = new System.Drawing.Size(126, 26);
+            this.textBoxQuilification.TabIndex = 12;
+            // 
+            // btnProc
+            // 
+            this.btnProc.Location = new System.Drawing.Point(1629, 269);
+            this.btnProc.Name = "btnProc";
+            this.btnProc.Size = new System.Drawing.Size(138, 41);
+            this.btnProc.TabIndex = 13;
+            this.btnProc.Text = "Вычислить";
+            this.btnProc.UseVisualStyleBackColor = true;
+            this.btnProc.Click += new System.EventHandler(this.btnProc_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1176, 1050);
+            this.ClientSize = new System.Drawing.Size(1898, 1024);
+            this.Controls.Add(this.btnProc);
+            this.Controls.Add(this.textBoxQuilification);
+            this.Controls.Add(this.lblResult);
+            this.Controls.Add(this.lblQuilification);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -525,6 +571,10 @@
         private System.Windows.Forms.ToolStripMenuItem альтернативнаяToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem задача1ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sqlProcedureToolStripMenuItem;
+        private System.Windows.Forms.Label lblQuilification;
+        private System.Windows.Forms.Label lblResult;
+        private System.Windows.Forms.TextBox textBoxQuilification;
+        private System.Windows.Forms.Button btnProc;
     }
 }
 

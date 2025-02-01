@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -81,6 +82,55 @@ namespace DatabaseCourse2
         {
             CmdForm cmd = new CmdForm();    
             cmd.ShowDialog();
+        }
+
+        private void ResLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnProc_Click(object sender, EventArgs e)
+        {
+            int quilification = 0;
+            try
+            {
+                quilification = int.Parse(textBoxQuilification.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Не верный формат ввода!");
+            }
+
+
+            SqlConnection conn = new SqlConnection("Data Source=LAPTOP-LCHJBBK9;Initial Catalog=uni_serverm1;Integrated Security=True;");
+
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = conn;
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = "get_total_time";
+            cmd.Parameters.AddWithValue("@q", quilification);
+
+            // выходной параметр
+            SqlParameter param = new SqlParameter();
+            param.ParameterName = "@total_time";
+            param.SqlDbType = SqlDbType.Decimal;
+            param.Direction = ParameterDirection.Output;
+            cmd.Parameters.Add(param);
+
+            try
+            {
+                conn.Open();
+                int resv = cmd.ExecuteNonQuery();
+                conn.Close();
+
+                lblResult.Text = $"Суммарное время на изготовление:  {cmd.Parameters["@total_time"].Value}";
+
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
