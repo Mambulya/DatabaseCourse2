@@ -32,17 +32,21 @@ namespace DatabaseCourse2
         {
             proTA.Fill(ds.production_normas);
             MaindataGridView.DataSource = ds.production_normas;
-            this.Text = "Нормы производства";    
+            this.Text = "Нормы затрат труда";    
         }
 
         private void btnWorkerExp_Click(object sender, EventArgs e)
         {
-
+            weTA.Fill(ds.worker_experience);
+            MaindataGridView.DataSource = ds.worker_experience;
+            this.Text = "Личный состав";
         }
 
         private void btnWorkerInf_Click(object sender, EventArgs e)
         {
-
+            wiTA.Fill(ds.worker_info);
+            MaindataGridView.DataSource = ds.worker_info;
+            this.Text = "Учет выработки";
         }
     }
 }
