@@ -71,5 +71,10 @@ namespace DatabaseCourse2
             FillAll();
         }
 
+        private void альтернативнаяToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AltForm f = new AltForm();
+            f.ShowDialog();
+        }
     }
 }

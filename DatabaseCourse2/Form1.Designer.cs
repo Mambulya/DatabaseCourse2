@@ -65,6 +65,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.формыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.задача1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.основнаяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.альтернативнаяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.production_normasdataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productionnormasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet2)).BeginInit();
@@ -72,6 +77,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.workerexperienceBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.worker_infodataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.workerinfoBindingSource)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // production_normasdataGridView
@@ -339,6 +345,45 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "worker_info";
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.формыToolStripMenuItem,
+            this.задача1ToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(784, 24);
+            this.menuStrip1.TabIndex = 8;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // формыToolStripMenuItem
+            // 
+            this.формыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.основнаяToolStripMenuItem,
+            this.альтернативнаяToolStripMenuItem});
+            this.формыToolStripMenuItem.Name = "формыToolStripMenuItem";
+            this.формыToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.формыToolStripMenuItem.Text = "Формы";
+            // 
+            // задача1ToolStripMenuItem
+            // 
+            this.задача1ToolStripMenuItem.Name = "задача1ToolStripMenuItem";
+            this.задача1ToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.задача1ToolStripMenuItem.Text = "Задача 1";
+            // 
+            // основнаяToolStripMenuItem
+            // 
+            this.основнаяToolStripMenuItem.Name = "основнаяToolStripMenuItem";
+            this.основнаяToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.основнаяToolStripMenuItem.Text = "Основная";
+            // 
+            // альтернативнаяToolStripMenuItem
+            // 
+            this.альтернативнаяToolStripMenuItem.Name = "альтернативнаяToolStripMenuItem";
+            this.альтернативнаяToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.альтернативнаяToolStripMenuItem.Text = "Альтернативная";
+            this.альтернативнаяToolStripMenuItem.Click += new System.EventHandler(this.альтернативнаяToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -352,6 +397,8 @@
             this.Controls.Add(this.worker_infodataGridView);
             this.Controls.Add(this.worker_experiencedataGridView);
             this.Controls.Add(this.production_normasdataGridView);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -362,6 +409,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.workerexperienceBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.worker_infodataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.workerinfoBindingSource)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -405,6 +454,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem формыToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem основнаяToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem альтернативнаяToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem задача1ToolStripMenuItem;
     }
 }
 
