@@ -28,44 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnProductionN = new System.Windows.Forms.Button();
+            this.btnWorkerExp = new System.Windows.Forms.Button();
+            this.btnWorkerInfo = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.MaindataGridView = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.MaindataGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btnProductionN
             // 
-            this.button1.BackColor = System.Drawing.Color.Gainsboro;
-            this.button1.ForeColor = System.Drawing.Color.Fuchsia;
-            this.button1.Location = new System.Drawing.Point(84, 295);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnProductionN.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnProductionN.ForeColor = System.Drawing.Color.Fuchsia;
+            this.btnProductionN.Location = new System.Drawing.Point(84, 295);
+            this.btnProductionN.Name = "btnProductionN";
+            this.btnProductionN.Size = new System.Drawing.Size(120, 23);
+            this.btnProductionN.TabIndex = 0;
+            this.btnProductionN.Text = "production_normas";
+            this.btnProductionN.UseVisualStyleBackColor = false;
+            this.btnProductionN.Click += new System.EventHandler(this.btnProductionN_Click);
             // 
-            // button2
+            // btnWorkerExp
             // 
-            this.button2.BackColor = System.Drawing.Color.Gainsboro;
-            this.button2.ForeColor = System.Drawing.Color.LimeGreen;
-            this.button2.Location = new System.Drawing.Point(354, 294);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnWorkerExp.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnWorkerExp.ForeColor = System.Drawing.Color.LimeGreen;
+            this.btnWorkerExp.Location = new System.Drawing.Point(330, 295);
+            this.btnWorkerExp.Name = "btnWorkerExp";
+            this.btnWorkerExp.Size = new System.Drawing.Size(120, 23);
+            this.btnWorkerExp.TabIndex = 1;
+            this.btnWorkerExp.Text = "worker_experience";
+            this.btnWorkerExp.UseVisualStyleBackColor = false;
+            this.btnWorkerExp.Click += new System.EventHandler(this.btnWorkerExp_Click);
             // 
-            // button3
+            // btnWorkerInfo
             // 
-            this.button3.BackColor = System.Drawing.Color.Gainsboro;
-            this.button3.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.button3.Location = new System.Drawing.Point(619, 294);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnWorkerInfo.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnWorkerInfo.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.btnWorkerInfo.Location = new System.Drawing.Point(566, 295);
+            this.btnWorkerInfo.Name = "btnWorkerInfo";
+            this.btnWorkerInfo.Size = new System.Drawing.Size(120, 23);
+            this.btnWorkerInfo.TabIndex = 2;
+            this.btnWorkerInfo.Text = "worker_info";
+            this.btnWorkerInfo.UseVisualStyleBackColor = false;
+            this.btnWorkerInfo.Click += new System.EventHandler(this.btnWorkerInf_Click);
             // 
             // btnClose
             // 
@@ -78,26 +83,37 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // MaindataGridView
+            // 
+            this.MaindataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.MaindataGridView.Location = new System.Drawing.Point(34, 36);
+            this.MaindataGridView.Name = "MaindataGridView";
+            this.MaindataGridView.Size = new System.Drawing.Size(731, 170);
+            this.MaindataGridView.TabIndex = 4;
+            // 
             // AltForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.MaindataGridView);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnWorkerInfo);
+            this.Controls.Add(this.btnWorkerExp);
+            this.Controls.Add(this.btnProductionN);
             this.Name = "AltForm";
             this.Text = "AltForm";
+            ((System.ComponentModel.ISupportInitialize)(this.MaindataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnProductionN;
+        private System.Windows.Forms.Button btnWorkerExp;
+        private System.Windows.Forms.Button btnWorkerInfo;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.DataGridView MaindataGridView;
     }
 }
